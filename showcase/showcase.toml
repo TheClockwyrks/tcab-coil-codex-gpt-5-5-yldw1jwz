@@ -1,0 +1,11 @@
+[[media]]
+file = "live-play.png"
+name = "A live combo route"
+
+[[media]]
+file = "title.png"
+name = "The neon title screen"
+
+[[media]]
+file = "pause.png"
+name = "Paused over the board"

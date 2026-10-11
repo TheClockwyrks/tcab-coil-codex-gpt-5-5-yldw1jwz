@@ -1,0 +1,7 @@
+{
+  "width": 32,
+  "height": 32,
+  "background": "#00000000",
+  "actions": "asset-src/body.drawlog.json",
+  "preview": "assets/snake/body.png"
+}

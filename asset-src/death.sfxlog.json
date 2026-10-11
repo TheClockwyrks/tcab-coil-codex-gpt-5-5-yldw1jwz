@@ -1,0 +1,72 @@
+[
+  {
+    "op": "add_voice",
+    "name": "drop",
+    "wave": "saw",
+    "freq": 180.0,
+    "gain": -5.0,
+    "pan": 0.0,
+    "start_ms": 0.0,
+    "dur_ms": 620.0
+  },
+  {
+    "op": "set_envelope",
+    "voice": "drop",
+    "attack_ms": 0.0,
+    "decay_ms": 120.0,
+    "sustain": 0.45,
+    "release_ms": 360.0,
+    "env": null
+  },
+  {
+    "op": "set_pitch",
+    "voice": "drop",
+    "slide_to_hz": 48.0,
+    "over_ms": 540.0
+  },
+  {
+    "op": "add_voice",
+    "name": "burst",
+    "wave": "noise",
+    "freq": 440.0,
+    "gain": -12.0,
+    "pan": 0.0,
+    "start_ms": 0.0,
+    "dur_ms": 260.0
+  },
+  {
+    "op": "set_envelope",
+    "voice": "burst",
+    "attack_ms": null,
+    "decay_ms": null,
+    "sustain": null,
+    "release_ms": null,
+    "env": "punch"
+  },
+  {
+    "op": "add_filter",
+    "target": {
+      "voice": "burst"
+    },
+    "kind": "lowpass",
+    "cutoff_hz": 1300.0,
+    "sweep_to_hz": 260.0,
+    "over_ms": 260.0,
+    "resonance": 1.4
+  },
+  {
+    "op": "add_distortion",
+    "target": {
+      "bus": "master"
+    },
+    "drive": 1.8
+  },
+  {
+    "op": "add_reverb",
+    "target": {
+      "bus": "master"
+    },
+    "size": 0.6,
+    "mix": 0.22
+  }
+]
